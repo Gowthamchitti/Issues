@@ -1,0 +1,152 @@
+ git pull     
+remote: Enumerating objects: 29, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 19 (delta 13), reused 19 (delta 13), pack-reused 0 (from 0)
+Unpacking objects: 100% (19/19), 6.83 KiB | 107.00 KiB/s, done.
+From https://github.com/lovetrip04/MiniERP
+   17bd093..b6e5878  main       -> origin/main
+Updating 17bd093..b6e5878
+Fast-forward
+ MidJune-Complete-ERP/TROUBLESHOOTING.md            | 121 ++++++++++++
+ MidJune-Complete-ERP/build-frontend.js             | 103 ++++++++++
+ .../server/utils/databaseLogger.ts                 |  10 +-
+ MidJune-Complete-ERP/server/vite.ts                |  25 ++-
+ MidJune-Complete-ERP/start.bat                     |   4 +
+ ...ocalhost-8080-A-1749831963193_1749831963193.txt | 215 +++++++++++++++++++++
+ logs/maintenance-report.json                       |   2 +-
+ 7 files changed, 475 insertions(+), 5 deletions(-)
+ create mode 100644 MidJune-Complete-ERP/TROUBLESHOOTING.md
+ create mode 100644 MidJune-Complete-ERP/build-frontend.js
+ create mode 100644 attached_assets/Pasted--start-bat-Starting-MidJune-Complete-ERP-System-Starting-server-on-http-localhost-8080-A-1749831963193_1749831963193.txt
+PS E:\GIt REpo\MINIERP\MiniERP> cd .\MidJune-Complete-ERP\
+PS E:\GIt REpo\MINIERP\MiniERP\MidJune-Complete-ERP> npm i 
+
+removed 93 packages, and audited 492 packages in 2s
+
+68 packages are looking for funding
+  run `npm fund` for details
+
+5 moderate severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+PS E:\GIt REpo\MINIERP\MiniERP\MidJune-Complete-ERP> .\start.bat  
+Starting MidJune Complete ERP System...
+
+Building frontend interface...
+Building MidJune ERP Frontend...
+❌ Frontend build failed: ENOENT: no such file or directory, mkdir 'E:\E:\GIt%20REpo\MINIERP\MiniERP\MidJune-Complete-ERP\server\public'
+Creating fallback HTML...
+node:fs:1364
+  const result = binding.mkdir(
+                         ^
+
+Error: ENOENT: no such file or directory, mkdir 'E:\E:\GIt%20REpo\MINIERP\MiniERP\MidJune-Complete-ERP\server\public'
+    at Object.mkdirSync (node:fs:1364:26)
+    at file:///E:/GIt%20REpo/MINIERP/MiniERP/MidJune-Complete-ERP/build-frontend.js:98:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'mkdir',
+  path: 'E:\\E:\\GIt%20REpo\\MINIERP\\MiniERP\\MidJune-Complete-ERP\\server\\public'
+}
+
+Node.js v22.14.0
+Starting server on http://localhost:8080
+Access the ERP dashboard at: http://localhost:8080
+
+
+> midjune-complete-erp@1.0.0 start
+> tsx server/index.ts
+
+
+node:internal/modules/run_main:122
+    triggerUncaughtException(
+    ^
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'xlsx' imported from E:\GIt REpo\MINIERP\MiniERP\MidJune-Complete-ERP\server\routes\uploadRoutes.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at nextResolve (node:internal/modules/esm/hooks:748:28)
+    at resolveBase (file:///E:/GIt%20REpo/MINIERP/MiniERP/MidJune-Complete-ERP/node_modules/tsx/dist/esm/index.mjs?1749832333589:2:3811)   
+    at resolveDirectory (file:///E:/GIt%20REpo/MINIERP/MiniERP/MidJune-Complete-ERP/node_modules/tsx/dist/esm/index.mjs?1749832333589:2:4310)
+    at resolveTsPaths (file:///E:/GIt%20REpo/MINIERP/MiniERP/MidJune-Complete-ERP/node_modules/tsx/dist/esm/index.mjs?1749832333589:2:5051)
+    at async resolve (file:///E:/GIt%20REpo/MINIERP/MiniERP/MidJune-Complete-ERP/node_modules/tsx/dist/esm/index.mjs?1749832333589:2:5422) 
+    at async nextResolve (node:internal/modules/esm/hooks:748:22) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v22.14.0
+PS E:\GIt REpo\MINIERP\MiniERP\MidJune-Complete-ERP> cd..
+PS E:\GIt REpo\MINIERP\MiniERP> git pull
+Already up to date.
+PS E:\GIt REpo\MINIERP\MiniERP> cd .\MidJune-Complete-ERP\
+PS E:\GIt REpo\MINIERP\MiniERP\MidJune-Complete-ERP> npm i
+
+up to date, audited 492 packages in 3s
+
+68 packages are looking for funding
+  run `npm fund` for details
+
+5 moderate severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+PS E:\GIt REpo\MINIERP\MiniERP\MidJune-Complete-ERP> .\start.bat
+Starting MidJune Complete ERP System...
+
+Building frontend interface...
+Building MidJune ERP Frontend...
+❌ Frontend build failed: ENOENT: no such file or directory, mkdir 'E:\E:\GIt%20REpo\MINIERP\MiniERP\MidJune-Complete-ERP\server\public'
+Creating fallback HTML...
+node:fs:1364
+  const result = binding.mkdir(
+                         ^
+
+Error: ENOENT: no such file or directory, mkdir 'E:\E:\GIt%20REpo\MINIERP\MiniERP\MidJune-Complete-ERP\server\public'
+    at Object.mkdirSync (node:fs:1364:26)
+    at file:///E:/GIt%20REpo/MINIERP/MiniERP/MidJune-Complete-ERP/build-frontend.js:98:8
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'mkdir',
+  path: 'E:\\E:\\GIt%20REpo\\MINIERP\\MiniERP\\MidJune-Complete-ERP\\server\\public'
+}
+
+Node.js v22.14.0
+Starting server on http://localhost:8080
+Access the ERP dashboard at: http://localhost:8080
+
+
+> midjune-complete-erp@1.0.0 start
+> tsx server/index.ts
+
+
+node:internal/modules/run_main:122
+    triggerUncaughtException(
+    ^
+Error [ERR_MODULE_NOT_FOUND]: Cannot find package 'xlsx' imported from E:\GIt REpo\MINIERP\MiniERP\MidJune-Complete-ERP\server\routes\uploadRoutes.js
+    at Object.getPackageJSONURL (node:internal/modules/package_json_reader:268:9)
+    at packageResolve (node:internal/modules/esm/resolve:768:81)
+    at moduleResolve (node:internal/modules/esm/resolve:854:18)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at nextResolve (node:internal/modules/esm/hooks:748:28)
+    at resolveBase (file:///E:/GIt%20REpo/MINIERP/MiniERP/MidJune-Complete-ERP/node_modules/tsx/dist/esm/index.mjs?1749832492448:2:3811)   
+    at resolveDirectory (file:///E:/GIt%20REpo/MINIERP/MiniERP/MidJune-Complete-ERP/node_modules/tsx/dist/esm/index.mjs?1749832492448:2:4310)
+    at resolveTsPaths (file:///E:/GIt%20REpo/MINIERP/MiniERP/MidJune-Complete-ERP/node_modules/tsx/dist/esm/index.mjs?1749832492448:2:5051)
+    at async resolve (file:///E:/GIt%20REpo/MINIERP/MiniERP/MidJune-Complete-ERP/node_modules/tsx/dist/esm/index.mjs?1749832492448:2:5422) 
+    at async nextResolve (node:internal/modules/esm/hooks:748:22) {
+  code: 'ERR_MODULE_NOT_FOUND'
+}
+
+Node.js v22.14.0
